@@ -1,0 +1,36 @@
+{
+  "name": "imageprop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "export NODE_ENV=development &&  electronmon .",
+    "dist": "electron-builder"
+  },
+  "author": "Liberty Daniel Mukubvu",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.0.2",
+    "electron-builder": "^24.6.4",
+    "electronmon": "^2.0.2"
+  },
+  "dependencies": {
+    "exifreader": "^4.15.0",
+    "jimp": "^0.22.10"
+  },
+  "build": {
+    "appId": "Liberty Daniel Mukubvu",
+    "productName": "Metai",
+    "target": "DMG",
+    "dmg":{
+      "icon": "./assets/app.icns"
+    },
+    "mac": {
+      "icon": "./assets/app.icns"
+    },
+    "directories": {
+      "output": "build"
+    }
+  }
+}
